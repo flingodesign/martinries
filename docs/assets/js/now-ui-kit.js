@@ -18,8 +18,8 @@
 
 var transparent = true;
 
-var transparentDemo = true;
-var fixedTop = false;
+var transparentDemo = false;
+var fixedTop = true;
 
 var navbar_initialized,
     backgroundOrange = false,
@@ -142,12 +142,12 @@ nowuiKit = {
         if ($(document).scrollTop() > scroll_distance) {
             if (transparent) {
                 transparent = false;
-                $('.navbar[color-on-scroll]').removeClass('navbar-transparent');
+                $('.navbar[color-on-scroll]').removeClass('');
             }
         } else {
             if (!transparent) {
                 transparent = true;
-                $('.navbar[color-on-scroll]').addClass('navbar-transparent');
+                $('.navbar[color-on-scroll]').addClass('');
             }
         }
     }, 17),

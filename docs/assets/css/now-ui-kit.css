@@ -3093,7 +3093,7 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
 }
 
 h1,
@@ -3281,7 +3281,7 @@ p.description {
 body {
     color: #2c2c2c;
     font-size: 14px;
-    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
@@ -5555,7 +5555,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .page-header:before {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .page-header[filter-color="orange"] {
@@ -7517,7 +7517,7 @@ i {
 }
 .mh {
   text-transform: uppercase;
-  font-family: Montserrat;
+  font-family: Lato;
   font-weight: bold;
 }
 .title {
@@ -7550,15 +7550,13 @@ i {
 }
 .product h5,h4{
   text-transform: uppercase;
-  font-family: Montserrat;
+  font-family: Lato;
   font-weight: bold;
 }
 .product a{
   color: #CF2525
 }
 .product img{
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
 }
 .site-title-l {
   text-align: left;
@@ -7693,9 +7691,6 @@ p {
 }
 .img-center {
   text-align: center;
-}
-.active {
-  background-color: rgba(222, 222, 222, 0.3)!important;
 }
 .img-round {
   border-radius: 50%;
