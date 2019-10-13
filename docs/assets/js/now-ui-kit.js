@@ -112,18 +112,47 @@ $(document).on('click', '.navbar-toggler', function() {
         nowuiKit.misc.navbar_menu_visible = 0;
         $('#bodyClick').remove();
         setTimeout(function() {
-            $toggle.removeClass('toggled');
+            $toggle.removeClass('');
         }, 550);
     } else {
         setTimeout(function() {
-            $toggle.addClass('toggled');
+            $toggle.addClass('');
         }, 580);
         div = '<div id="bodyClick"></div>';
         $(div).appendTo('body').click(function() {
             $('html').removeClass('nav-open');
             nowuiKit.misc.navbar_menu_visible = 0;
             setTimeout(function() {
-                $toggle.removeClass('toggled');
+                $toggle.removeClass('');
+                $('#bodyClick').remove();
+            }, 550);
+        });
+
+        $('html').addClass('nav-open');
+        nowuiKit.misc.navbar_menu_visible = 1;
+    }
+});
+
+$(document).on('click', '.nav-link', function() {
+    $toggle = $(this);
+
+    if (nowuiKit.misc.navbar_menu_visible == 1) {
+        $('html').removeClass('nav-open');
+        nowuiKit.misc.navbar_menu_visible = 0;
+        $('#bodyClick').remove();
+        setTimeout(function() {
+            $toggle.removeClass('');
+        }, 550);
+    } else {
+        setTimeout(function() {
+            $toggle.addClass('');
+        }, 580);
+        div = '<div id="bodyClick"></div>';
+        $(div).appendTo('body').click(function() {
+            $('html').removeClass('nav-open');
+            nowuiKit.misc.navbar_menu_visible = 0;
+            setTimeout(function() {
+                $toggle.removeClass('');
                 $('#bodyClick').remove();
             }, 550);
         });
